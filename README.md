@@ -14,7 +14,7 @@ This is a simple and responsive Todo List website that helps users manage their 
 ## 🎯 How to Use
 1. Clone this repository:
    ```sh
-   git clone [https://github.com/UdhyaKumarKMIT/Todo-List]
+   git clone https://github.com/UdhyaKumarKMIT/Todo-List
    ```
 2. Navigate to the project directory:
    ```sh
