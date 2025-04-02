@@ -1,0 +1,152 @@
+.container{
+    display: flex;
+    flex-direction: column; /* Default it is row*/
+    justify-content: center; /*Horizontal Center*/
+    align-items: center; /*vertical Center */
+    height: fit-content;
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 30px;
+    width: 500px;
+    border: 2px solid black ;
+
+}
+#myList
+{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+    
+}
+
+
+#myText{
+    height: fit-content;
+    padding: 4px;
+    border: 3px;
+    width: 330px;
+    padding-left: 10px;
+    margin: 15px 0px 15px 0px;
+    margin-right: 5px;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1A1A64, #401677, #6C0578);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+button:hover{
+ transform: scale(1.2);
+}
+
+.btn-success{
+    width: 85px;
+}
+
+/* Adding a blurred background layer */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(8px); /* Softer blur */
+    z-index: -1;
+}
+
+/* Smooth Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(135deg, #232387, #401677, #6C0578);
+    }
+    50% {
+        background: linear-gradient(135deg, #531c9c, #6C0578, #1A1A64);
+    }
+    100% {
+        background: linear-gradient(135deg, #6C0578, #1A1A64, #401677);
+    }
+}
+
+body {
+    animation: gradientShift 100s infinite alternate ease-in-out;
+}
+
+.myListItemText {
+    flex-grow: 1; /* Allows text to take remaining space */
+  
+}
+
+.delete-icon {
+    width: 24px; /* Adjust width */
+    height: 24px; /* Adjust height */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: transform 0.2s ease-in-out;
+   
+}
+
+.delete-icon:hover {
+    transform: scale(1.3); /* Slight zoom effect */
+}
+.myListItem {
+    position: relative;
+    width: 330px;
+    overflow: hidden;
+    padding: 9px 15px;
+    margin-top: 10px;
+    background-color: transparent;
+    border-radius: 17px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: whitesmoke;
+    transition: transform 0.2s ease-in-out;
+   
+}
+
+/* Pseudo-element for the animated background */
+.myListItem::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    transition: 0.5s all ease;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 8px;
+    
+}
+
+/* Hover effect triggers the background slide */
+.myListItem:hover,
+.myListItem:focus {
+    color: white; /* Text color turns white */
+    box-shadow: 0 0 19px rgba(38, 67, 194, 0.8);
+    transform: scale(1.07);
+}
+
+.myListItem:hover::before,
+.myListItem:focus::before {
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
