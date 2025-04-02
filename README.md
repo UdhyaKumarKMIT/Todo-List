@@ -18,7 +18,7 @@ This is a simple and responsive Todo List website that helps users manage their 
    ```
 2. Navigate to the project directory:
    ```sh
-   cd todo-list
+   cd Todo-List
    ```
 3. Open `index.html` in a browser.
 4. Start adding tasks and managing them!
