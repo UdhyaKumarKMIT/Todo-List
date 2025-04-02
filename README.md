@@ -1,7 +1,7 @@
 # Todo List Website
 
 ## 📌 Project Overview
-This is a simple and responsive Todo List website that helps users manage their tasks efficiently. Built using HTML, CSS, JavaScript, and Bootstrap, it offers an interactive interface for adding, deleting, and marking tasks as completed.
+This is a simple and responsive Todo List website that helps users manage their tasks efficiently. Built using HTML, CSS, JavaScript, and Bootstrap, it offers an interactive interface for adding, deleting and resetting the list.
 
 ## 🛠️ Tech Stack
 - **Frontend**: HTML, CSS, JavaScript, Bootstrap
