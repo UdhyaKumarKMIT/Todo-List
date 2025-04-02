@@ -1,3 +1,8 @@
+**File Structure**
+
+<img width="580" alt="{06D145F8-3181-44F4-A590-AAAA47594CD8}" src="https://github.com/user-attachments/assets/32fd46c7-cdbd-4e42-bcf7-8b27e1963a28" />
+
+
 <img width="960" alt="{6FD7D0D1-86A5-4551-A82D-5D5773158E2D}" src="https://github.com/user-attachments/assets/395a1f3a-5534-4fdd-b54c-3c5c571aa3fd" />
 
 
